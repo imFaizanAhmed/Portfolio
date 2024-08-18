@@ -11,20 +11,23 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import { Suspense } from "react";
 
 const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
-        <Hero />
-        <Hero2 />
-        <Grid />
-        <RecentProjects />
-        <Clients />
-        <Experience />
-        <Approach />
-        <Footer />
+      <div className="max-w-7xl">
+        <Suspense fallback={<div>Loading</div>}>
+          <FloatingNav navItems={navItems} />
+          {/* <Hero /> */}
+          <Hero2 />
+          <Grid />
+          <RecentProjects />
+          <Clients />
+          <Experience />
+          <Approach />
+          <Footer />
+        </Suspense>
       </div>
     </main>
   );
