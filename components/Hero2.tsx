@@ -10,7 +10,10 @@ import { FaLocationArrow } from "react-icons/fa6";
 function HeroSection() {
   return (
     <div className="h-[30rem] md:h-[40rem] w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto py-10 md:py-0">
-      {/* <Spotlight className="-top-40 left-0 w-full md:-top-20" fill="white" /> */}
+      <Spotlight
+        className="-top-40 md:left-[170px] w-full md:-top-20 hidden sm:block"
+        fill="white"
+      />
       <div className="p-4 mt-[100px] lg:mt-[200px] relative z-10 w-full text-center">
         <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           Faizan Ahmed
