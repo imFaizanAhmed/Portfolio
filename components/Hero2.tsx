@@ -20,8 +20,8 @@ function HeroSection() {
         </h1>
         <div className="mt-2 w-[cal(100vw - 80px)] h-40 relative -z-10">
           {/* Gradients */}
-          <div className="absolute inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-          <div className="absolute inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+          <div className="absolute inset-x-14 md:inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+          <div className="absolute inset-x-14 md:inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
 
           {/* Core component */}
           <SparklesCore
