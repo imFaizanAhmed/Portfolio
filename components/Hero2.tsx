@@ -15,9 +15,9 @@ function HeroSection() {
   ];
 
   return (
-    <div className="min-h-screen w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto py-10 md:py-0">
+    <div className="w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto pt-10 pb-20 md:pt-0">
       <Spotlight
-        className="-top-40 md:left-[170px] lg:left-[30%] w-full md:-top-20"
+        className="-top-40 md:left-[0px] hidden sm:block w-full md:-top-20"
         fill="white"
       />
       <div className="absolute inset-x-14 md:inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
