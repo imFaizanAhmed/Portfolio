@@ -64,9 +64,10 @@ function HeroSection() {
             </div>
             <br />
             <p className="text-xl">
-              with about <span className="text-[#f9004d]">three years</span> of
-              industrial experience. I can be relied upon to help your company
-              achieve its goals by providing sustainable and scalable solutions.
+              with more than <span className="text-[#f9004d]">three years</span>{" "}
+              of industrial experience. I can be relied upon to help your
+              company achieve its goals by providing sustainable and scalable
+              solutions.
             </p>
             <br />
             <p>
