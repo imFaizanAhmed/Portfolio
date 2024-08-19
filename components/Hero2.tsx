@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
@@ -8,8 +7,9 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { TypewriterEffectDemo } from "./typingEffect";
 
 function HeroSection() {
+  console.log("rendering HeroSection");
   return (
-    <div className="h-[30rem] md:h-[40rem] w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto py-10 md:py-0">
+    <div className="h-[30rem] sm:h-[40rem] w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto py-10 md:py-0">
       <Spotlight
         className="-top-40 md:left-[170px] lg:left-[30%] w-full md:-top-20 hidden sm:block"
         fill="white"
