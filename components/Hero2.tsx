@@ -37,14 +37,14 @@ function HeroSection() {
           <div className="min-w-[unset] md:min-w-[450px] lg:w-[700px]">
             <div className="flex flex-col items-center md:items-start">
               <p className="text-base m-0">
-                Welcome to my world, I'm{" "}
+                Welcome to my world, I&apos;m{" "}
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold block leading-tight">
                   Faizan Ahmed
                 </span>
               </p>
               <br />
               <h2 className="flex items-center flex-nowrap overflow-visible leading-9 text-3xl sm:text-3xl md:text-4xl lg:text-4xl h-9">
-                <pre className="md:inline hidden">I'm a </pre>
+                <pre className="md:inline hidden">I&apos;m a </pre>
                 <span className="text-[#f9004d]">
                   <div
                     style={{
@@ -71,7 +71,7 @@ function HeroSection() {
             </p>
             <br />
             <p>
-              Currently, I'm working as Full-stack developer at{" "}
+              Currently, I&apos;m working as Full-stack developer at{" "}
               <a href="https://numuworld.com/" target="_blank">
                 Numu World
               </a>
