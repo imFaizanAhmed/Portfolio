@@ -1,11 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
-import { SparklesCore } from "./ui/sparkles";
-import MagicButton from "./MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
-import { TypewriterEffectDemo } from "./typingEffect";
 import TypingEffect from "./effects/typingeffect";
+import { LinkPreview } from "./ui/link-preview";
 
 function HeroSection() {
   const textArray = [
@@ -39,7 +35,9 @@ function HeroSection() {
               <p className="text-base m-0">
                 Welcome to my world, I&apos;m{" "}
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold block leading-tight">
-                  Faizan Ahmed
+                  <LinkPreview url="https://github.com/imFaizanAhmed/">
+                    Faizan Ahmed
+                  </LinkPreview>
                 </span>
               </p>
               <br />
@@ -71,10 +69,15 @@ function HeroSection() {
             </p>
             <br />
             <p>
-              Currently, I&apos;m working as Full-stack developer at{" "}
-              <a href="https://numuworld.com/" target="_blank">
-                Numu World
-              </a>
+              Currently, I&apos;m working as Sr. Full-stack developer at{" "}
+              <span className="max-w-3xl mx-auto mb-10">
+                <LinkPreview
+                  url="https://Antematter.io/"
+                  className="text-[#f9004d] dark:text-[#f9004d]"
+                >
+                  Antematter
+                </LinkPreview>
+              </span>
               .
             </p>
           </div>
