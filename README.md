@@ -1,5 +1,5 @@
 <h2>Isn't it cool?</h2>
-<p>Yeah, I know. It is the best thing that happened to me. I am not here to get all the credit for this masterpiece. I took the design for one of the genuine Adrianhajdin. It is so cool because he uses the coolest library Aceternity UI for all animations.</p>
+<p>Yeah, I know. It is one the best things that happened to me. I am not here to get all the credit for this masterpiece. I took the design inspection for one of the genuine Adrianhajdin. It is so cool because he uses the coolest library Aceternity UI for all animations.</p>
 
 <h2>Credits</h2>
 
