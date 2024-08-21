@@ -1,52 +1,91 @@
 import React from "react";
-import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
-import { SparklesCore } from "./ui/sparkles";
-import MagicButton from "./MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
-import { TypewriterEffectDemo } from "./typingEffect";
+import TypingEffect from "./effects/typingeffect";
+import { LinkPreview } from "./ui/link-preview";
 
 function HeroSection() {
-  console.log("rendering HeroSection");
+  const textArray = [
+    "Full Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+  ];
+
   return (
-    <div className="h-[30rem] sm:h-[40rem] w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto py-10 md:py-0">
+    <div className="w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto pt-10 pb-20 md:pt-0">
       <Spotlight
-        className="-top-40 md:left-[170px] lg:left-[30%] w-full md:-top-20 hidden sm:block"
+        className="-top-40 md:left-[0px] hidden sm:block w-full md:-top-20"
         fill="white"
       />
-      <div className="p-4 mt-[100px] lg:mt-[150px] relative z-10 w-full text-center">
-        <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-          Faizan Ahmed
-        </h1>
-        <div className="mt-2 w-[cal(100vw - 80px)] h-40 relative -z-10">
-          {/* Gradients */}
-          <div className="absolute inset-x-14 md:inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-          <div className="absolute inset-x-14 md:inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+      <div className="absolute inset-x-14 md:inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+      <div className="absolute inset-x-14 md:inset-x-32 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
 
-          {/* Core component */}
-          <SparklesCore
-            background="transparent"
-            minSize={0.4}
-            maxSize={1}
-            particleDensity={1200}
-            className="w-full h-full max-w-[800px] m-auto"
-            particleColor="#FFFFFF"
-          />
-
-          <div className="-mt-4 z-10 flex flex-col justify-center items-center">
-            <TypewriterEffectDemo />
-            <div className="mt-4">
-              <Link href="https://drive.google.com/file/d/1wNJ1J0mZ60GplJ7_qzP0oCkbC4fnz9RV/view">
-                <MagicButton
-                  title="Checkout my work"
-                  icon={<FaLocationArrow />}
-                  position="right"
-                />
-              </Link>
+      <section
+        id="intro"
+        className="mt-[150px] min-h-[calc(100svh - 119px)] sm:min-h-[calc(100svh - 64px)] lg:min-h-[calc(100svh - 73px)] max-w-[1004px] w-full px-8"
+      >
+        <div className="w-full flex flex-col md:flex-row-reverse justify-center items-center z-10 gap-8">
+          <div className="block min-w-[230px] w-[230px] items-center mb-2 rounded-tl-[4%] rounded-tr-[30%] rounded-br-[4%] rounded-bl-[30%] overflow-hidden bg-white-200 relative aspect-[230/265]">
+            <img
+              style={{ position: "absolute", height: 400, top: 8 }}
+              src="./myPicture.png"
+            />
+          </div>
+          <div className="min-w-[unset] md:min-w-[450px] lg:w-[700px]">
+            <div className="flex flex-col items-center md:items-start">
+              <p className="text-base m-0">
+                Welcome to my world, I&apos;m{" "}
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold block leading-tight">
+                  <LinkPreview url="https://github.com/imFaizanAhmed/">
+                    Faizan Ahmed
+                  </LinkPreview>
+                </span>
+              </p>
+              <br />
+              <h2 className="flex items-center flex-nowrap overflow-visible leading-9 text-3xl sm:text-3xl md:text-4xl lg:text-4xl h-9">
+                <pre className="md:inline hidden">I&apos;m a </pre>
+                <span className="text-[#f9004d]">
+                  <div
+                    style={{
+                      fontWeight: "bold",
+                      textAlign: "center",
+                    }}
+                  >
+                    <TypingEffect
+                      textArray={textArray}
+                      typingSpeed={100}
+                      pauseTime={1500}
+                    />
+                  </div>
+                </span>
+                <span className="inline-block ml-[0.1rem] w-1 h-1 animate-[blink 1s infinite]"></span>
+              </h2>
             </div>
+            <br />
+            <p className="text-xl">
+              with more than <span className="text-[#f9004d]">three years</span>{" "}
+              of industrial experience - specialized in{" "}
+              <span className="text-[#f9004d]">
+                ReactJs, NextJs, and NodeJs
+              </span>
+              . I can be relied upon to help your company achieve its goals by
+              providing sustainable and scalable solutions.
+            </p>
+            <br />
+            <p>
+              Currently, I&apos;m working as Sr. Full-stack developer at{" "}
+              <span className="max-w-3xl mx-auto mb-10">
+                <LinkPreview
+                  url="https://Antematter.io/"
+                  className="text-[#f9004d] dark:text-[#f9004d]"
+                >
+                  Antematter
+                </LinkPreview>
+              </span>
+              .
+            </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

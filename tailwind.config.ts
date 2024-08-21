@@ -27,6 +27,7 @@ const config = {
     },
     extend: {
       colors: {
+        customGray: "rgb(42, 42, 45)",
         black: {
           DEFAULT: "#000",
           100: "#000319",
