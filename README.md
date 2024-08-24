@@ -5,4 +5,4 @@
 
 - [Adrianhajdin](https://github.com/adrianhajdin)
 - [NextJs](https://nextjs.org/)
-- [Framer Motion]([https://ui.aceternity.com](https://www.framer.com/motion/)/)
+- [Framer Motion](https://www.framer.com/motion/)
