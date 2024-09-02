@@ -11,7 +11,7 @@ function HeroSection() {
   ];
 
   return (
-    <div className="w-full rounded-md flex flex-col items-center relative overflow-hidden mx-auto pt-10 pb-20 md:pt-0">
+    <div className="w-screen rounded-md flex flex-col items-center relative overflow-hidden pt-10 pb-20 md:pt-0">
       <Spotlight
         className="-top-40 md:left-[0px] hidden sm:block w-full md:-top-20"
         fill="white"
@@ -21,7 +21,7 @@ function HeroSection() {
 
       <section
         id="intro"
-        className="mt-[150px] min-h-[calc(100svh - 119px)] sm:min-h-[calc(100svh - 64px)] lg:min-h-[calc(100svh - 73px)] max-w-[1004px] w-full px-8"
+        className="mt-[100px] md:mt-[150px] min-h-[calc(100svh - 119px)] sm:min-h-[calc(100svh - 64px)] lg:min-h-[calc(100svh - 73px)] max-w-[1004px] w-full px-8"
       >
         <div className="w-full flex flex-col md:flex-row-reverse justify-center items-center z-10 gap-8">
           <div className="block min-w-[230px] w-[230px] items-center mb-2 rounded-tl-[4%] rounded-tr-[30%] rounded-br-[4%] rounded-bl-[30%] overflow-hidden bg-white-200 relative aspect-[230/265]">
