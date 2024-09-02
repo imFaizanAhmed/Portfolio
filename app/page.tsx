@@ -12,7 +12,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { Suspense } from "react";
-import Skills from "@/components/skills";
+// import Skills from "@/components/skills";
 import { TabsDemo } from "@/components/skillsTab";
 
 const Home = () => {
